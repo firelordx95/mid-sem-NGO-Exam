@@ -1,0 +1,331 @@
+/* EcoSense Africa responsive rules */
+@media (max-width: 1200px) {
+  :root {
+    --max-width: 1060px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .metric-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .card-grid--four,
+  .donation-impact {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 992px) {
+  :root {
+    --nav-height: 72px;
+    --space-7: 3.6rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.1rem;
+  }
+
+  .nav-shell {
+    position: relative;
+  }
+
+  .nav-toggle-label {
+    display: inline-flex;
+  }
+
+  .nav-toggle:checked + .nav-toggle-label span {
+    transform: rotate(45deg);
+  }
+
+  .nav-toggle:checked + .nav-toggle-label span::before {
+    transform: rotate(90deg);
+  }
+
+  .nav-toggle:checked + .nav-toggle-label span::after {
+    opacity: 0;
+  }
+
+  .site-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(100% + 0.8rem);
+    display: grid;
+    gap: var(--space-3);
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 var(--space-3);
+    border: 1px solid transparent;
+    border-radius: var(--radius-md);
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: var(--shadow-card);
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: max-height 260ms ease, padding 260ms ease, opacity 220ms ease, transform 220ms ease, border-color 220ms ease;
+  }
+
+  .nav-toggle:checked ~ .site-nav {
+    max-height: 620px;
+    padding: var(--space-3);
+    border-color: var(--color-line);
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .site-nav__links {
+    display: grid;
+    gap: 0.2rem;
+  }
+
+  .site-nav__links a {
+    min-height: 42px;
+  }
+
+  .button--nav {
+    width: 100%;
+  }
+
+  .hero {
+    min-height: 610px;
+  }
+
+  .split,
+  .project-layout,
+  .contact-grid,
+  .newsletter-band {
+    grid-template-columns: 1fr;
+  }
+
+  .project-aside {
+    position: static;
+  }
+
+  .card-grid,
+  .card-grid--two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .partner-row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .footer-main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .value-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --space-6: 2.4rem;
+    --space-7: 3rem;
+  }
+
+  body {
+    font-size: 0.97rem;
+  }
+
+  h1 {
+    font-size: 2.45rem;
+  }
+
+  h2 {
+    font-size: 1.85rem;
+  }
+
+  .brand__tagline {
+    display: none;
+  }
+
+  .hero {
+    min-height: 560px;
+  }
+
+  .hero__content {
+    padding: var(--space-6) 0;
+  }
+
+  .hero__mission,
+  .page-hero p,
+  .lead {
+    font-size: 1.03rem;
+  }
+
+  .page-hero {
+    min-height: 330px;
+  }
+
+  .page-hero h1 {
+    font-size: 2.35rem;
+  }
+
+  .card-grid,
+  .card-grid--two,
+  .card-grid--four,
+  .metric-grid,
+  .donation-impact {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-panel,
+  .newsletter-band {
+    padding: var(--space-4);
+  }
+
+  .form-inline {
+    display: grid;
+  }
+
+  .partner-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .gallery-grid {
+    grid-auto-rows: 190px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .gallery-item--large,
+  .gallery-item--wide {
+    grid-column: span 2;
+  }
+
+  .gallery-item--tall {
+    grid-row: span 1;
+  }
+
+  .footer-main,
+  .footer-bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    display: grid;
+  }
+
+  .org-chart ul {
+    justify-content: flex-start;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: min(calc(100% - 1.2rem), var(--max-width));
+  }
+
+  h1,
+  h2,
+  h3,
+  p,
+  a,
+  span {
+    overflow-wrap: break-word;
+  }
+
+  .nav-shell {
+    gap: 0.7rem;
+  }
+
+  .logo-mark {
+    width: 42px;
+    height: 42px;
+  }
+
+  .brand__name {
+    font-size: 0.96rem;
+  }
+
+  h1 {
+    font-size: 2.1rem;
+  }
+
+  h2 {
+    font-size: 1.62rem;
+  }
+
+  .section-kicker {
+    font-size: 0.76rem;
+  }
+
+  .hero {
+    min-height: 520px;
+  }
+
+  .hero::before,
+  .page-hero::before {
+    background:
+      linear-gradient(90deg, rgba(8, 26, 17, 0.86), rgba(8, 26, 17, 0.58)),
+      linear-gradient(0deg, rgba(8, 26, 17, 0.38), rgba(8, 26, 17, 0.08));
+  }
+
+  .hero__actions {
+    display: grid;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .page-hero h1 {
+    font-size: 2rem;
+  }
+
+  .card__body,
+  .feature-card,
+  .testimonial,
+  .impact-note,
+  .project-aside {
+    padding: var(--space-3);
+  }
+
+  .partner-row,
+  .value-list {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-auto-rows: 210px;
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item--large,
+  .gallery-item--wide,
+  .gallery-item--tall {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .meta-list div {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+
+  th,
+  td {
+    padding: 0.85rem;
+  }
+}
