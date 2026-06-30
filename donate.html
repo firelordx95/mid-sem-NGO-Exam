@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Donate to EcoSense Africa and support tree planting, recycling, water monitoring, STEM education, and environmental action.">
+  <title>Donate | EcoSense Africa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="EcoSense Africa home">
+        <span class="logo-mark" aria-hidden="true"><span class="logo-mark__leaf"></span><span class="logo-mark__drop"></span></span>
+        <span class="brand__text"><span class="brand__name">EcoSense Africa</span><span class="brand__tagline">Monitoring Today. Preserving Tomorrow.</span></span>
+      </a>
+      <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Toggle navigation">
+      <label class="nav-toggle-label" for="nav-toggle"><span aria-hidden="true"></span><span class="sr-only">Menu</span></label>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <ul class="site-nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="donate.html" aria-current="page">Donate</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a class="button button--primary button--nav" href="donate.html">Donate Today</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero" aria-labelledby="page-title">
+      <img class="page-hero__image" src="https://picsum.photos/seed/donate-environment-africa/1920/900" alt="Hands holding a young tree seedling in soil">
+      <div class="container">
+        <span class="eyebrow">Donate</span>
+        <h1 id="page-title">Fuel practical environmental work across communities.</h1>
+        <p>Your support helps EcoSense Africa provide monitoring tools, tree care, school resources, recycling systems, and renewable energy pilots.</p>
+      </div>
+    </section>
+
+    <section class="section section--light" aria-labelledby="donation-title">
+      <div class="container split">
+        <article>
+          <span class="section-kicker">Why Donations Matter</span>
+          <h2 id="donation-title">Small gifts can become visible environmental change.</h2>
+          <p class="lead">Donations help communities move from intention to action. A contribution can buy seedlings, support water monitoring kits, provide recycling bins, or sponsor environmental education.</p>
+          <p>EcoSense Africa treats each donation as an investment in local capacity: practical resources, better information, and long-term stewardship.</p>
+        </article>
+        <aside class="impact-note">
+          <h3>Donation Priorities</h3>
+          <ul class="check-list">
+            <li>Water and air monitoring kits.</li>
+            <li>Tree planting and seedling aftercare.</li>
+            <li>Climate education materials for schools.</li>
+            <li>Recycling collection points and community workshops.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--soft" aria-labelledby="impact-title">
+      <div class="container">
+        <div class="section-heading section-heading--center">
+          <span class="section-kicker">Impact Cards</span>
+          <h2 id="impact-title">What your giving can support.</h2>
+        </div>
+        <div class="donation-impact">
+          <article><strong>GHS 50</strong><p>Plants 20 trees and supports basic aftercare materials.</p></article>
+          <article><strong>GHS 100</strong><p>Provides recycling bins for a classroom or community collection point.</p></article>
+          <article><strong>GHS 250</strong><p>Supports water monitoring supplies for a local source.</p></article>
+          <article><strong>GHS 500</strong><p>Sponsors STEM-based environmental education resources.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light" aria-labelledby="donation-form-title">
+      <div class="container split split--top">
+        <article>
+          <span class="section-kicker">Give Today</span>
+          <h2 id="donation-form-title">Complete the donation pledge form.</h2>
+          <p class="lead">Choose an amount, select a purpose, and share a short note with the EcoSense team.</p>
+          <figure class="media-panel">
+            <img src="https://picsum.photos/seed/donation-impact-trees/900/650" alt="Healthy young trees growing in a restoration site">
+            <figcaption class="sr-only">Trees growing in a restoration site supported by donations.</figcaption>
+          </figure>
+        </article>
+
+        <form class="form-panel" action="#" method="post" aria-label="Donation form">
+          <fieldset>
+            <legend>Donation Form</legend>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="donor-name">Name</label>
+                <input id="donor-name" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div class="form-group">
+                <label for="donor-email">Email</label>
+                <input id="donor-email" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div class="form-group">
+                <label for="donation-amount">Donation Amount</label>
+                <input id="donation-amount" name="amount" type="number" min="1" placeholder="GHS" required>
+              </div>
+              <div class="form-group">
+                <label for="donation-purpose">Purpose</label>
+                <select id="donation-purpose" name="purpose" required>
+                  <option value="">Select purpose</option>
+                  <option>Tree planting</option>
+                  <option>Water monitoring</option>
+                  <option>Environmental education</option>
+                  <option>Recycling and waste reduction</option>
+                  <option>General support</option>
+                </select>
+              </div>
+              <div class="form-group form-group--full">
+                <label for="donation-message">Message</label>
+                <textarea id="donation-message" name="message" placeholder="Optional note for the EcoSense team"></textarea>
+              </div>
+              <div class="form-group form-group--full">
+                <button class="button button--primary" type="submit">Donate Now</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <section aria-labelledby="footer-brand-title">
+        <a class="brand" href="index.html" aria-label="EcoSense Africa home">
+          <span class="logo-mark" aria-hidden="true"><span class="logo-mark__leaf"></span><span class="logo-mark__drop"></span></span>
+          <span class="brand__text"><span class="brand__name" id="footer-brand-title">EcoSense Africa</span><span class="brand__tagline">Monitoring Today. Preserving Tomorrow.</span></span>
+        </a>
+        <p>Technology, education, and community action for a cleaner African future.</p>
+      </section>
+      <nav aria-label="Footer quick links">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <section aria-labelledby="footer-contact-title">
+        <h3 id="footer-contact-title">Contact</h3>
+        <p>EcoSense Africa House<br>East Legon, Accra, Ghana</p>
+        <p><a href="mailto:hello@ecosenseafrica.org">hello@ecosenseafrica.org</a><br><a href="tel:+233302555019">+233 302 555 019</a></p>
+        <ul class="social-list" aria-label="Social media links">
+          <li><a href="#" aria-label="Facebook">f</a></li>
+          <li><a href="#" aria-label="X">x</a></li>
+          <li><a href="#" aria-label="LinkedIn">in</a></li>
+          <li><a href="#" aria-label="Instagram">ig</a></li>
+        </ul>
+      </section>
+      <section aria-labelledby="footer-newsletter-title">
+        <h3 id="footer-newsletter-title">Newsletter</h3>
+        <p>Get updates from classrooms, forests, water sites, and clean energy pilots.</p>
+        <form class="form-inline" action="#" method="post" aria-label="Footer newsletter signup">
+          <label class="sr-only" for="footer-email">Email address</label>
+          <input id="footer-email" name="email" type="email" placeholder="Email address">
+          <button class="button button--primary" type="submit">Join</button>
+        </form>
+      </section>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 EcoSense Africa. All rights reserved.</p>
+      <p>Designed for environmental education and community impact.</p>
+    </div>
+  </footer>
+</body>
+</html>
